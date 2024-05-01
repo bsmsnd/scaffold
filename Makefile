@@ -10,9 +10,9 @@ format:
 	black *.py
 
 lint:
-	pylint --disable=R,C hello.py
+	pylint --disable=R,C reverse_list.py
 
 test:
-	python -m pytest -vv --cov=hello test_hello.py
+	python -m pytest -vv --cov=reverse_list test_reverse_list.py
 
 all: install lint test
